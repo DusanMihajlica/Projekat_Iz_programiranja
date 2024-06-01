@@ -6,5 +6,5 @@ class Libary:
         self.lista_objekata.append(book)
         
     def ispis_knjiga(self):
-        for object in self.list_objekata:
+        for object in self.lista_objekata:
             print(object.display_info())
