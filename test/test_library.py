@@ -24,6 +24,6 @@ class Test_Libary(unittest.TestCase):
        l.ispis_knjiga()
        sys.stdout = sys.__stdout__
        self.assertEqual(capture_output.getvalue().strip(), "dd, dd, 167, dd")
-        
+    
 if __name__ == '__main__':
    unittest.main()

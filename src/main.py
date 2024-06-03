@@ -55,3 +55,11 @@ elif unos == "3":
     lines = [book1.display_info() + '\n' if book.display_info() in line else line for line in lines]
     with open("fajl.txt", "w") as file:
         file.writelines(lines)
+
+elif unos == "4":
+    kriterjum = input("Po cemu zelite da pretrazujete knjige: ")
+    key_word = input("Kljucna rec za pretragu: ")
+    results = libary.search_books(kriterjum, key_word)
+    print("Rezultati pretrage: ")
+    for result in results:
+        print(result)
